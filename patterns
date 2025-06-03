@@ -1,0 +1,243 @@
+#=========== 1
+#LEFT ANGLE TRIANGLE
+# n=5
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+
+n = 5
+for i in range(1,n+1):
+    print("* "*i)
+
+#=========== 2
+#DOWN LEFT ANGLE TRIANGLE
+# n=5
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *
+n = 5
+for i in range(n,0,-1):
+    print("* " * i)
+
+
+# ================== 3
+
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *
+n = 5
+for i in range(1,n):
+    print("* "*i)
+for i in range(n,0,-1):
+    print("* " * i)
+
+
+#======================= 4
+
+# ________*
+# ______* *
+# ____* * *
+# __* * * *
+# * * * * *
+n=5
+for i in range(1,n+1):
+    print("  "*(n-i)+ "* "*i)
+
+#======================= 5
+
+# * * * * *
+#   * * * *
+#     * * *
+#       * *
+#         *
+n = 5
+for i in range(n,0,-1):
+    print("  " * (n - i) + "* " * i)
+
+#===================== 6
+#         *
+#       * *
+#     * * *
+#   * * * *
+# * * * * *
+#   * * * *
+#     * * *
+#       * *
+#         *
+n=5
+for i in range(1,n):
+    print("  "*(n-i)+ "* "*i)
+for i in range(n,0,-1):
+    print("  " * (n - i) + "* " * i)
+
+#=====================  7
+#     *
+#    * *
+#   * * *
+#  * * * *
+# * * * * *
+n=100
+for i in range(1,n+1):
+    print(" "*(n-i)+ "* "*i)
+
+#=================== 8
+# * * * * *
+#  * * * *
+#   * * *
+#    * *
+#     *
+n=5
+for i in range(n,0,-1):
+    print(" "*(n-i)+ "* "*i)
+
+
+#================ 9
+#   *
+#  * *
+# * * *
+#  * *
+#   *
+n=3
+for i in range(1,n):
+    print(" "*(n-i)+ "* "*i)
+for i in range(n,0,-1):
+    print(" " * (n - i) + "* " * i)
+
+
+#=================== 10
+# * * * *
+# *     *
+# *     *
+# * * * *
+n =10
+for i in range(1,n+1):
+    if i == 1 or i == n: print("* "*n)
+    else: print("* "+"  "*(n-2)+"* ")
+#============  2 for
+n = 9
+for i in  range(1,n+1):
+    for j in range(1,n+1):
+        if i==1 or j == 1 or i == n or j == n:
+            print("* ",end="")
+        else: print("  ",end="")
+    print()
+
+#================== 11
+
+# *     *
+#   * *
+#   * *
+# *     *
+#
+# *       *
+#   *   *
+#     *
+#   *   *
+# *       *
+
+n = 55
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if  i==j or (i+j)==(n+1):
+            print("* ",end="")
+        else:
+            print("  ",end="")
+    print()
+
+
+# ==============  12
+# * * * * *
+# * *   * *
+# *   *   *
+# * *   * *
+# * * * * *
+n = 55
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if i==1 or j == 1 or i == n or j == n or i==j or (i+j)==(n+1):
+            print("* ",end="")
+        else:
+            print("  ",end="")
+    print()
+# ==============  13
+
+# 1
+# 1 2
+# 1 2 3
+n = 10
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+# ==============  14
+
+# 1
+# 2 2
+# 3 3 3
+# 4 4 4 4
+n = 10
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i,end=" ")
+    print()
+
+# ==============  15
+# 1
+# 2 3
+# 4 5 6
+# 7 8 9 10
+n = 10
+k=1
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(k,end=" ")
+        k+=1
+    print()
+
+# ==============  16
+# n = 1<= n >=26
+# a
+# a b
+# a b c
+# a b c d
+n=5
+for i in range(1,n+1):
+    for j in range(0,i):
+        print( chr(ord("a") +j ),end=" ")
+    print()
+# ==============  17
+# a
+# b b
+# c c c
+n=26
+for i in range(0,n):
+    for j in range(0,i+1):
+        print( chr(ord("a") +i),end=" ")
+    print()
+
+# ==============  18
+
+# s = raju
+# r
+# ra
+# raj
+# raju
+# raj
+# ra
+# r
+s="ram"
+for i in range(1,len(s)):
+    print(s[:i])
+for i in range(len(s),0,-1):
+        print(s[:i])
